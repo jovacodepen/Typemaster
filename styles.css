@@ -1,0 +1,375 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.body-copy {
+  color: #7B8BAD;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.grid-container {
+  padding: 0px 30px;
+}
+
+.button {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0px;
+}
+
+.button-1 {
+  background: #F16718;
+  color: #FFFFFF;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-1:hover {
+  background: #FF9B62;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-2 {
+  background: #E8EFF2;
+  color: #162542;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-2:hover {
+  background: #162542;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px !important;
+}
+
+.hero {
+  padding-top: 60px;
+}
+
+.hero .hero-img-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .img-desk-hero {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-copy-cell {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .hero .body-copy {
+    text-align: left;
+  }
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #162542;
+}
+
+.hero-release-date {
+  color: #7B8BAD;
+  font-weight: 800;
+  font-size: .9rem;
+  display: inline;
+  margin-left: 20px;
+}
+
+.hero-img-cell {
+  margin-top: 40px;
+}
+
+.hero-img-cell img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  right: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-cell {
+    margin-top: 0px;
+    height: 400px;
+  }
+  .hero-img-cell img {
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img-cell {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: -150px;
+  }
+  .hero-img-cell .img-desk-hero {
+    height: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    position: relative;
+    margin-left: 20px;
+    display: block;
+  }
+  .hero-img-cell .img-large {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .hero-img-cell .img-large img {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-img-cell {
+    right: -200px;
+  }
+}
+
+.description {
+  height: 100vh;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    height: 80vh;
+  }
+  .description .description-grid {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .description {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description .body-copy {
+    margin: 10px 0px;
+    text-align: left;
+  }
+}
+
+.description img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.description .img-container {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.description-img-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  position: relative;
+  left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .description-img-gallery {
+    height: 300px;
+    left: 0px;
+  }
+  .description-img-gallery img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.description-img-gallery .img-desk {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .description-img-gallery .img-desk {
+    display: block;
+    height: 50%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: relative;
+    left: -30px;
+    -webkit-box-flex: 0.8;
+        -ms-flex: 0.8;
+            flex: 0.8;
+  }
+}
+
+.description-img-gallery .img-small {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 30px;
+  background: #F16718;
+}
+
+.description-img-gallery .img-large {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .description-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description-heading {
+    display: block;
+    padding: 0px 70px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.description-heading h2 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #162542;
+  letter-spacing: -2px;
+  padding: 0px 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .description-heading h2 {
+    text-align: left;
+    padding: 0px;
+    padding-right: 70px;
+  }
+}
+
+.features {
+  min-height: 100vh;
+}
+
+.features-card {
+  text-align: center;
+  padding: 0px 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-card {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-card {
+    padding: 0px 20px;
+  }
+}
+
+.features-card-img {
+  background: #F16718;
+  padding: 20px;
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-card-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .features-card-img {
+    margin: 0px;
+    margin-bottom: 40px;
+    width: 70px;
+  }
+}
+
+.features-card-header {
+  font-weight: 900;
+  letter-spacing: -2px;
+  font-size: 1.5rem;
+  padding: 0px 50px;
+  color: #162542;
+}
+
+@media screen and (min-width: 768px) {
+  .features-card-header {
+    padding: 0px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-card-header {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .body-copy {
+    padding: 0px;
+    text-align: left;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #7B8BAD;
+  padding: 40px 0px;
+}
+
+footer .footer-product {
+  font-weight: 900;
+}
